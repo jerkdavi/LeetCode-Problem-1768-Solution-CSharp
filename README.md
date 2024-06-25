@@ -80,7 +80,7 @@ string fullWord = "";
 int counter = word1.Length + word2.Length;
 ```
 
-Secondly, the **for** function is created that iterates from _0_ to _counter_.
+Secondly, the **for** loop is created that iterates from _0_ to _counter_.
 
 ```cs
 for (int i = 0; i < counter; i++)
