@@ -19,7 +19,7 @@ namespace MergeStringsAlternately
             string word2 = Console.ReadLine();
 
             string fullWord = Solution.MergeAlternately(word1, word2);
-            Console.WriteLine($"Fullword: {fullWord}");
+            Console.WriteLine(fullWord);
 
             Console.WriteLine("Done processing");
             Console.ReadLine();
