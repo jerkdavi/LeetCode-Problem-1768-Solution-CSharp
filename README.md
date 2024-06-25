@@ -103,6 +103,8 @@ return fullWord;
 
 In Solution class, instead of initializing the **counter** variable, setting it as _word1 + word2 Length_, and using it in the **for** loop as the _count to value_, I have hardcoded the value of **100** to be the value the for loop counts to.
 
+I made this error based on the assumption on the constraint given in the problem itself -> ```1 <= word1.length, word2.length <= 100```
+
 ```cs
 for (int i = 0; i < 100; i++)
 {
