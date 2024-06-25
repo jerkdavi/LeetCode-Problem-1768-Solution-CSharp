@@ -2,7 +2,7 @@
 
 This is my solution to LeetCode Problem 1768 - **Merge Strings Alternately** - in C# and a brief explanation
 
-Link to problem on LeetCode -> https://leetcode.com/problems/merge-strings-alternately/
+Link to problem on LeetCode -> [https://leetcode.com/problems/merge-strings-alternately/](https://leetcode.com/problems/merge-strings-alternately/)
 
 ## PROJECT EXPLANATION
 
@@ -43,7 +43,7 @@ string word2 = Console.ReadLine();
 ```
 
 Next, the **MergeAlternately** function from **Solution** class is being called. It takes two strings (_string word1, string word_) and returns one string (_string fullWord_). The returned string is being stored into a new string named **fullWord**.
-The returned string is then printed to the console.
+The returned string is then printed out to the console.
 
 ```cs
 string fullWord = Solution.MergeAlternately(word1, word2);
@@ -51,6 +51,7 @@ Console.WriteLine(fullWord);
 ```
 
 At the end of the **Program** class there is next structure:
+
 - Console WriteLine -> displaying that the code is done processing.
 - Console ReadLine -> where it is waiting for user input. Why are we waiting for user input? -> To stop the code from automatically completing and exiting and us not being able to check the result of the code.
 
