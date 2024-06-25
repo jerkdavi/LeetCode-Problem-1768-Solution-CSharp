@@ -23,14 +23,17 @@ internal class Program
     {
 ```
 
-Firstly, I have initialized the **word1** and **word2** strings by using basic string initialization. This part of code is commented out currently.
+Firstly, the **word1** and **word2** strings are being initialized by using basic string initialization. This part of code is commented out currently.
 
 ```cs
 string word1 = "abc";
 string word2 = "pqr";
 ```
 
-Currently, I am initializing the **word1** and **word2** strings by using _Console Write_ where I am specifying which word you are inputting and using _string input = Console ReadLine_ where I am storing user input to a variable.
+Currently, the **word1** and **word2** strings are being initialized by using next structure:
+
+- Console Write -> where it is evident which word needs to be inputted.
+- string input = Console ReadLine -> where user input is being stored into a variable.
 
 ```cs
 Console.Write("Word1: ");
@@ -39,15 +42,17 @@ Console.Write("Word2: ");
 string word2 = Console.ReadLine();
 ```
 
-Next, I am calling the function from **Solution** class which takes two strings (_string word1, string word_) and returns one string (_string fullWord_) and storing the returned string to a new string named **fullWord**.
-I am printing out the returned string to the console.
+Next, the **MergeAlternately** function from **Solution** class is being called. It takes two strings (_string word1, string word_) and returns one string (_string fullWord_). The returned string is being stored into a new string named **fullWord**.
+The returned string is then printed to the console.
 
 ```cs
 string fullWord = Solution.MergeAlternately(word1, word2);
 Console.WriteLine(fullWord);
 ```
 
-At the end of the **Program** class I am doing a _Console WriteLine_ where I am showing that the code is done processing, and I am doing a _Console ReadLine_ to stop the code from automatically completing and exiting and us not being able to check the result of the code.
+At the end of the **Program** class there is next structure:
+- Console WriteLine -> displaying that the code is done processing.
+- Console ReadLine -> where it is waiting for user input. Why are we waiting for user input? -> To stop the code from automatically completing and exiting and us not being able to check the result of the code.
 
 ```cs
 Console.WriteLine("Done processing");
@@ -65,28 +70,28 @@ public class Solution
     {
 ```
 
-Firstly, I have initialized the **fullWord** string by using basic string initialization and set it as empty string. We will use this string to save the merged string to and return it at the end of the function.
+Firstly, the **fullWord** string is being initialized by using basic string initialization. It is set as empty string. This string will be used to store the merged string to and return it at the end of the function.
 
-I have initialized the **counter** int as well by using basic int initialization and set it as _word1 + word2 Length_. We will use this for specifying the number of times the **for** loop will run.
+The **counter** int is being initialized by using basic int initialization. It is set as _word1 + word2 Length_. This int will be used for specifying the number of times the **for** loop needs to run.
 
 ```cs
 string fullWord = "";
 int counter = word1.Length + word2.Length;
 ```
 
-Secondly, I have created the **for** function that iterates from _0_ to _counter_.
+Secondly, the **for** function is created that iterates from _0_ to _counter_.
 
 ```cs
 for (int i = 0; i < counter; i++)
 {
 ```
 
-Inside the **for** function, I have two **if** functions. Both check if **i** is less than _Length of the specified word_.
+Inside the **for** function, there are two **if** functions. Both check if **i** is less than _Length of the specified word_.
 
-- If it is less -> the intuition is that the word **HAS** letters remaining -> and it adds the specified letter of the specified word to the fullWord string
-- If it is greater -> the intuition is that the word does **NOT HAVE** letters remaining -> and it does not run the code after the if function
+- If it is less -> the intuition is that the word **HAS** letters remaining -> and it adds the specified letter of the specified word to the fullWord string.
+- If it is greater -> the intuition is that the word does **NOT HAVE** letters remaining -> and it does not run the code after the if function.
 
-The order of the words is important, as firstly we need to take the letter from the **word1** and then from the **word2**.
+The order of the words is important, as firstly the letter from the **word1** needs to be taken, and then the letter from the **word2**.
 
 Notice that string letters (or characters) can be accessed by using ```word[i]```.
 
@@ -95,7 +100,7 @@ if (i < word1.Length) { fullWord += word1[i]; }
 if (i < word2.Length) { fullWord += word2[i]; }
 ```
 
-At the end of the **Solution** class I am returning the **fullWord** string.
+At the end of the **Solution** class, the **fullWord** string is being returned.
 
 ```cs
 return fullWord;
