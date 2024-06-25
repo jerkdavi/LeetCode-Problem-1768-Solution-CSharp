@@ -1,6 +1,6 @@
 # SOLUTION TO LEETCODE PROBLEM 1768 - C#
 
-This is my solution to LeetCode Problem 1768 in C# and a brief explanation
+This is my solution to LeetCode Problem 1768 - **Merge Strings Alternately** - in C# and a brief explanation
 
 Link to problem on LeetCode -> https://leetcode.com/problems/merge-strings-alternately/
 
