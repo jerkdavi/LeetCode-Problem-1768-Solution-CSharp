@@ -88,6 +88,8 @@ Inside the **for** function, I have two **if** functions. Both check if **i** is
 
 The order of the words is important, as firstly we need to take the letter from the **word1** and then from the **word2**.
 
+Notice that string letters (or characters) can be accessed by using ```word[i]```.
+
 ```cs
 if (i < word1.Length) { fullWord += word1[i]; }
 if (i < word2.Length) { fullWord += word2[i]; }
