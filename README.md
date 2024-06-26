@@ -123,3 +123,18 @@ Even though this is **NOT WRONG**, it **IS TIME INEFFICIENT** because it goes th
 ## RUNNING THE CODE - RESULT
 
 ![image](https://github.com/jerkdavi/LeetCode-Problem-1768-Solution-CSharp/assets/75536158/481d33a4-bb2e-41b5-9f5b-4595a3b423ba) ![image](https://github.com/jerkdavi/LeetCode-Problem-1768-Solution-CSharp/assets/75536158/38bb35f7-6833-4ae4-81a8-70241c75ab2d) ![image](https://github.com/jerkdavi/LeetCode-Problem-1768-Solution-CSharp/assets/75536158/02ee0613-5050-4674-b712-31886ff8ee17) 
+
+<!---
+UPDATE: THIS CODE WAS COMMENTED OUT BECAUSE MULTIPLE SUBMISSIONS OF THE SAME CODE WERE DONE TO CHECK THE VALIDITY OF THE PERCENTAGES. THE VALUES DIFFERED DRAMATICALLY. IT WAS CONCLUDED THAT SUBMISSION TIME AND SPACE USAGE IS NOT ACCURATE INFORMATION, SO PROVISION OF SUCH INFORMATION IS ACTUALLY DETRIMENTAL TO THIS EXPLANATION.
+
+![image](https://github.com/jerkdavi/LeetCode-Problem-1768-Solution-CSharp/assets/75536158/7a2b9b8a-aee0-4064-8dd5-7e473d5f5a8a)
+
+The runtime is **38 ms** and beats **99.21 %** of csharp submissions which is not bad.
+
+![image](https://github.com/jerkdavi/LeetCode-Problem-1768-Solution-CSharp/assets/75536158/80b8e185-c544-4d64-977e-cfc8c9b0acc4)
+
+The memory usage is **40.2 MB** and 30.25 % of beats csharp submissions **BUT** it could be better. Any advice regarding that area is more than welcome.
+
+![image](https://github.com/jerkdavi/LeetCode-Problem-1768-Solution-CSharp/assets/75536158/1ef47c60-53af-452a-a11f-41af61f268c6)
+
+-->
