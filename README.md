@@ -23,17 +23,17 @@ internal class Program
     {
 ```
 
-Firstly, the **word1** and **word2** strings are being initialized by using basic string initialization. This part of code is commented out currently.
+Firstly, the **word1** and **word2** text inputs (strings) are initialized by using basic string initialization. This part of code is commented out currently.
 
 ```cs
 string word1 = "abc";
 string word2 = "pqr";
 ```
 
-Currently, the **word1** and **word2** strings are being initialized by using next structure:
+Currently, the **word1** and **word2** text inputs (strings) are initialized by using next structure:
 
-- Console Write -> where it is evident which word needs to be inputted.
-- string input = Console ReadLine -> where user input is being stored into a variable.
+- Console Write -> where it displays which word needs to be inputted.
+- string input = Console ReadLine -> where user input is stored into a variable.
 
 ```cs
 Console.Write("Word1: ");
@@ -42,7 +42,7 @@ Console.Write("Word2: ");
 string word2 = Console.ReadLine();
 ```
 
-Next, the **MergeAlternately** function from **Solution** class is being called. It takes two strings (_string word1, string word_) and returns one string (_string fullWord_). The returned string is being stored into a new string named **fullWord**.
+Next, the **MergeAlternately** function from **Solution** class is called. It takes two strings (_string word1, string word_) and returns one string (_string fullWord_). The returned string is stored into a new string named **fullWord**.
 The returned string is then printed out to the console.
 
 ```cs
@@ -52,8 +52,8 @@ Console.WriteLine(fullWord);
 
 At the end of the **Program** class there is next structure:
 
-- Console WriteLine -> displaying that the code is done processing.
-- Console ReadLine -> where it is waiting for user input. Why are we waiting for user input? To stop the code from automatically completing and exiting and us not being able to check the result of the code.
+- Console WriteLine -> where it displays that the code is done processing.
+- Console ReadLine -> where it waits for user input. Why does it wait for user input? To stop the code from automatically completing and exiting and us not being able to check the result of the code.
 
 ```cs
 Console.WriteLine("Done processing");
@@ -62,7 +62,7 @@ Console.ReadLine();
 
 ### Solution class 
 
-I have created a new class and named it **Solution**. I have made it public. I have created the **MergeAlternately** function to replicate the example from LeetCode problem. I have made it static.
+I have created a new class and named it **Solution**. I have made it public. I have created the **MergeAlternately** function to replicate the example from the LeetCode problem. I have made it static.
 
 ```cs
 public class Solution
@@ -71,37 +71,37 @@ public class Solution
     {
 ```
 
-Firstly, the **fullWord** string is being initialized by using basic string initialization. It is set as empty string. This string will be used to store the merged string to and return it at the end of the function.
+Firstly, the **fullWord** text input (string) is initialized by using basic string initialization. It is set as empty string. This text input (string) will be used to store the merged text input (string) into and return it at the end of the function.
 
-The **counter** int is being initialized by using basic int initialization. It is set as _word1 + word2 Length_. This int will be used for specifying the number of times the **for** loop needs to run.
+The **counter** numeric input (int) is initialized by using basic int initialization. It is set as _word1 + word2 Length_. This numeric input (int) will be used for specifying the number of times the **for** loop needs to run.
 
 ```cs
 string fullWord = "";
 int counter = word1.Length + word2.Length;
 ```
 
-Secondly, the **for** loop is created that iterates from _0_ to _counter_.
+Secondly, the **for** loop is initialized that iterates from _0_ to _counter_.
 
 ```cs
 for (int i = 0; i < counter; i++)
 {
 ```
 
-Inside the **for** function, there are two **if** functions. Both check if **i** is less than _Length of the specified word_.
+Inside the **for** loop, there are two **if** statements. Both check if **i** is less than _Length of the specified word_.
 
-- If it is less -> the intuition is that the word **HAS** letters remaining -> and it adds the specified letter of the specified word to the fullWord string.
-- If it is greater -> the intuition is that the word does **NOT HAVE** letters remaining -> and it does not run the code after the if function.
+- If _i < word Length_ -> the intuition is that the word **HAS** letters remaining -> and it adds the specified letter of the specified word to the fullWord text input (string).
+- If _i > word Length_ -> the intuition is that the word does **NOT HAVE** letters remaining -> and it does not add letter from the specified word to the fullWord text input (string).
 
-The order of the words is important, as firstly the letter from the **word1** needs to be taken, and then the letter from the **word2**.
+The order of the words is important, as first a letter from the **word1** needs to be taken, and then a letter from the **word2**.
 
-Notice that string letters (or characters) can be accessed by using ```word[i]```.
+Notice that text input letters (or chars) can be accessed by using ```word[i]```.
 
 ```cs
 if (i < word1.Length) { fullWord += word1[i]; }
 if (i < word2.Length) { fullWord += word2[i]; }
 ```
 
-At the end of the **Solution** class, the **fullWord** string is being returned.
+At the end of the **Solution** class, the **fullWord** text input (string) is returned.
 
 ```cs
 return fullWord;
