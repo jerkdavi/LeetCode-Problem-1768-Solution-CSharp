@@ -33,7 +33,7 @@ string word2 = "pqr";
 Currently, the **word1** and **word2** text inputs (strings) are initialized by using next structure:
 
 - Console Write -> where it displays which word needs to be inputted.
-- string input = Console ReadLine -> where user input is stored into a variable.
+- string input = Console ReadLine -> where user input is stored into the text input (string).
 
 ```cs
 Console.Write("Word1: ");
@@ -109,7 +109,7 @@ return fullWord;
 
 ## POTENTIAL MISTAKES (I HAVE MADE)
 
-In **Solution** class, instead of initializing the **counter** variable, setting it as _word1 + word2 Length_, and using it in the **for** loop as the _count to value_, I have hardcoded the value of **100** to be the value the for loop counts to.
+In **Solution** class, instead of initializing the **counter** numeric input (int), setting it as _word1 + word2 Length_, and using it in the **for** loop as the _count to value_, I have hardcoded the value of **100** to be the value the for loop counts to.
 
 I have made this error based on the assumption on the constraint given in the problem itself -> ```1 <= word1.length, word2.length <= 100```
 
