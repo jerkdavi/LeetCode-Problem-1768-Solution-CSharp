@@ -62,7 +62,7 @@ Console.ReadLine();
 
 ### Solution class 
 
-I have created a new class and named it **Solution**. I have made it public. I have created the **MergeAlternately** function to replicate the example from the LeetCode problem. I have made it static.
+I have created a new class and named it **Solution**. I have made it public. I have created the **MergeAlternately** function and mirrored the example provided in the LeetCode problem. I have made it static.
 
 ```cs
 public class Solution
