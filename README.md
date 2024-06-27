@@ -53,7 +53,16 @@ Console.WriteLine(fullWord);
 At the end of the **Program** class there is next structure:
 
 - Console WriteLine -> where it displays that the code is done processing.
-- Console ReadLine -> where it waits for user input. Why does it wait for user input? To stop the code from automatically completing and exiting and us not being able to check the result of the code.
+- Console ReadLine -> where it waits for user input.
+
+---
+
+<details>
+<summary>WHY DOES CONSOLE READLINE WAIT FOR USER INPUT?</summary><br>
+To stop the code from automatically completing and exiting and us not being able to check the result of the code.<br>
+</details>
+
+---
 
 ```cs
 Console.WriteLine("Done processing");
