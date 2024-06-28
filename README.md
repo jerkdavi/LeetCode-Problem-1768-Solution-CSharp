@@ -127,7 +127,16 @@ for (int i = 0; i < 100; i++)
 {
 ```
 
-Even though this is **NOT WRONG**, it **IS TIME INEFFICIENT** because it goes through **200** iterations every time, no matter the _length of the words_.
+Even though this is **NOT WRONG**, it **IS TIME INEFFICIENT**.
+
+---
+
+<details>
+<summary>WHY IS IT TIME INEFFICIENT?</summary><br>
+Because it goes through <strong>200</strong> iterations every time, no matter the <i>Length of the words</i>.<br>
+</details>
+
+---
 
 Any advice regarding making the code _MORE TIME AND SPACE EFFICIENT_ is **MORE THAN WELCOME**.
 
